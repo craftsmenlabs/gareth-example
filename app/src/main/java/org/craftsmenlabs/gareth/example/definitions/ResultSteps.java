@@ -12,7 +12,6 @@ public class ResultSteps implements ExperimentDefinition {
     @Success(glueLine = "^send email to (.*?)$")
     public void sendEmail(ExecutionRunContext runContext, String recipient) {
         runContext.storeString("result", "sending success mail to " + recipient);
-
     }
 
     @Success(glueLine = "^send text to (.*?)$")
@@ -29,5 +28,4 @@ public class ResultSteps implements ExperimentDefinition {
     public void sendFailureText(ExecutionRunContext runContext, String recipient) {
         runContext.storeString("result", "sending failure text to " + recipient);
     }
-
 }

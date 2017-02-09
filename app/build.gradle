@@ -1,3 +1,8 @@
+plugins {
+    id 'jacoco'
+    id 'com.github.kt3k.coveralls' version '2.6.3'
+}
+
 group 'org.craftsmenlabs.gareth.example'
 version '1.0-SNAPSHOT'
 
