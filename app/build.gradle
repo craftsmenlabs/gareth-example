@@ -1,0 +1,12 @@
+group 'org.craftsmenlabs.gareth.example'
+version '1.0-SNAPSHOT'
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter"
+    compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+    compile "org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}"
+
+    compile "com.github.craftsmenlabs.gareth-jvm:gareth-api:${garethVersion}"
+    compile "com.github.craftsmenlabs.gareth-jvm:gareth-core:${garethVersion}"
+    compile "com.github.craftsmenlabs.gareth-jvm:gareth-execution-ri:${garethVersion}"
+}
